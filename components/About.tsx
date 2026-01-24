@@ -1,0 +1,75 @@
+'use client'
+
+import { useScrollReveal } from '../hooks/useScrollReveal'
+
+export default function About() {
+    const sectionRef = useScrollReveal<HTMLElement>()
+
+    return (
+        <section
+            ref={sectionRef}
+            id="sobre"
+            className="relative py-24 md:py-32"
+        >
+            {/* Background */}
+            <div className="absolute inset-0 bg-zinc-900/50" />
+            <div className="absolute inset-0 overflow-hidden">
+                <div
+                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full blur-3xl opacity-20"
+                    style={{ background: 'radial-gradient(circle, rgba(13,42,84,0.5) 0%, transparent 70%)' }}
+                />
+            </div>
+
+            <div className="relative z-10 max-w-4xl mx-auto px-6">
+                {/* Section header */}
+                <div className="scroll-reveal text-center mb-12">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+                        <span className="bg-gradient-to-r from-white via-white to-zinc-500 bg-clip-text text-transparent">
+                            Quem sou eu
+                        </span>
+                    </h2>
+                </div>
+
+                {/* Content */}
+                <div className="scroll-reveal reveal-delay-2 space-y-6 text-zinc-400 text-lg leading-relaxed">
+                    <p>
+                        Sou um desenvolvedor <span className="text-[#3b6cb5] font-semibold">Fullstack com foco em Backend</span>,
+                        apaixonado por <span className="font-medium">resolver problemas reais</span> através de software.
+                        Trabalho com tecnologias modernas como Node.js, TypeScript, React e bancos de dados SQL e NoSQL.
+                    </p>
+                    <p>
+                        Minha abordagem e centrada em <span className="text-[#3b6cb5]">codigo limpo</span>,
+                        <span className="text-[#3b6cb5]"> boas praticas</span> e
+                        <span className="text-[#3b6cb5]"> solucoes escalaveis</span>. Acredito que um bom software
+                        começa com uma base sólida e bem organizada.
+                    </p>
+                    <p>
+                        Estou sempre em busca de novos desafios e oportunidades para aprender e crescer como profissional.
+                    </p>
+                </div>
+
+                {/* Stats */}
+                <div className="scroll-reveal reveal-delay-3 grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+                    {[
+                        { value: '2+', label: 'Anos de experiência' },
+                        { value: '10+', label: 'Projetos nos quais contribuí' },
+                        { value: '8+', label: 'Tecnologias' },
+                        { value: '100%', label: 'Comprometimento' }
+                    ].map((stat) => (
+                        <div
+                            key={stat.label}
+                            className="text-center p-4 rounded-xl border border-zinc-800 bg-zinc-900/50"
+                        >
+                            <div className="text-2xl md:text-3xl font-bold text-[#3b6cb5] mb-1">
+                                {stat.value}
+                            </div>
+                            <div className="text-sm text-zinc-500">
+                                {stat.label}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    )
+}
