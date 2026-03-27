@@ -4,6 +4,20 @@ const nextConfig: NextConfig = {
   // Otimizacao de imagens
   images: {
     formats: ['image/avif', 'image/webp'],
+    localPatterns: [
+      {
+        pathname: '/projects/**',
+      },
+      {
+        pathname: '/profile/**',
+      },
+    ],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'avatars.githubusercontent.com',
+      },
+    ],
   },
   // Compressao
   compress: true,
