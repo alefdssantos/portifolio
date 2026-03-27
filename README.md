@@ -26,7 +26,11 @@ portifolio/
 ├── hooks/                  # Custom hooks
 │   └── useScrollReveal.ts  # Hook para animacoes de scroll
 └── public/                 # Assets estaticos
-    └── alef.jpeg           # Foto de perfil
+    ├── profile/
+    │   └── alef.webp       # Foto de perfil otimizada
+    └── projects/
+        ├── creators-studio.webp
+        └── gika-finance/   # Screenshots otimizados em WebP
 ```
 
 ## Instalacao
