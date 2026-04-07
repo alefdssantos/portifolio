@@ -23,23 +23,26 @@ export default function About() {
         <div className="scroll-reveal reveal-delay-2 space-y-6 text-zinc-400 text-lg leading-relaxed">
           <p>
             Sou um desenvolvedor <span className="text-[#3b6cb5] font-semibold">Fullstack com foco em Backend</span>,
-            apaixonado por <span className="font-medium">resolver problemas reais</span> através de software.
-            Trabalho com tecnologias modernas como Node.js, TypeScript, React e bancos de dados SQL e NoSQL.
+            com experiência na construção de <span className="font-medium">sistemas completos em produção</span> —
+            de plataformas de e-commerce e CRMs a aplicações SaaS com inteligência artificial.
           </p>
           <p>
-            Minha abordagem e centrada em <span className="text-[#3b6cb5]">codigo limpo</span>,
-            <span className="text-[#3b6cb5]"> boas praticas</span> e
-            <span className="text-[#3b6cb5]"> solucoes escalaveis</span>. Acredito que um bom software começa com
-            uma base sólida e bem organizada.
+            Trabalho com <span className="text-[#3b6cb5]">Node.js, TypeScript, React, Next.js</span> e bancos de
+            dados SQL e NoSQL. Tenho experiência com integrações de mensageria
+            (<span className="text-[#3b6cb5]">WhatsApp, Telegram</span>), processamento de filas, automação e
+            deploy com Docker e serviços cloud (AWS, Firebase, Supabase).
           </p>
-          <p>Estou sempre em busca de novos desafios e oportunidades para aprender e crescer como profissional.</p>
+          <p>
+            Minha abordagem é centrada em entregar soluções que funcionam: código organizado, arquitetura pensada
+            para escalar e foco no problema real do cliente.
+          </p>
         </div>
 
         <div className="scroll-reveal reveal-delay-3 grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
           {[
-            { value: '2+', label: 'Anos de experiência' },
-            { value: '10+', label: 'Projetos nos quais contribuí' },
-            { value: '8+', label: 'Tecnologias' },
+            { value: '4+', label: 'Anos de experiência' },
+            { value: '20+', label: 'Projetos desenvolvidos' },
+            { value: '15+', label: 'Tecnologias' },
             { value: '100%', label: 'Comprometimento' },
           ].map((stat) => (
             <div key={stat.label} className="text-center p-4 rounded-xl border border-zinc-800 bg-zinc-900/50">

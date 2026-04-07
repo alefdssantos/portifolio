@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="378" viewBox="0 0 600 378">
+  <rect width="600" height="378" rx="12" fill="#0a0a0a"/>
+  <rect x="0" y="0" width="600" height="40" rx="12" fill="#18181b"/>
+  <rect x="0" y="24" width="600" height="16" fill="#18181b"/>
+  <circle cx="20" cy="20" r="6" fill="#ef4444"/>
+  <circle cx="40" cy="20" r="6" fill="#eab308"/>
+  <circle cx="60" cy="20" r="6" fill="#22c55e"/>
+  <text x="300" y="24" fill="#71717a" font-family="monospace" font-size="12" text-anchor="middle">linkedin-auto-apply</text>
+  <line x1="0" y1="40" x2="600" y2="40" stroke="#27272a" stroke-width="1"/>
+    <text x="16" y="78" fill="#4ade80" font-family="monospace" font-size="13"><tspan fill="#4ade80">$ </tspan><tspan fill="#e4e4e7">npx ts-node src/index.ts</tspan></text>
+    <text x="16" y="100" fill="#a1a1aa" font-family="monospace" font-size="13"></text>
+    <text x="16" y="122" fill="#60a5fa" font-family="monospace" font-size="13">→ Loading profile from config/profile.json</text>
+    <text x="16" y="144" fill="#60a5fa" font-family="monospace" font-size="13">→ Browser session restored (persistent)</text>
+    <text x="16" y="166" fill="#60a5fa" font-family="monospace" font-size="13">→ Search: "fullstack developer" | Remote | Brazil</text>
+    <text x="16" y="188" fill="#a1a1aa" font-family="monospace" font-size="13"></text>
+    <text x="16" y="210" fill="#4ade80" font-family="monospace" font-size="13">✓ Found 47 matching positions</text>
+    <text x="16" y="232" fill="#4ade80" font-family="monospace" font-size="13">✓ Applied: Senior Fullstack - TechCorp</text>
+    <text x="16" y="254" fill="#4ade80" font-family="monospace" font-size="13">✓ Applied: Backend Node.js - StartupXYZ</text>
+    <text x="16" y="276" fill="#4ade80" font-family="monospace" font-size="13">✓ Applied: React Developer - DigitalCo</text>
+    <text x="16" y="298" fill="#4ade80" font-family="monospace" font-size="13">✓ AI answered 3 screening questions</text>
+    <text x="16" y="320" fill="#a1a1aa" font-family="monospace" font-size="13"></text>
+    <text x="16" y="342" fill="#71717a" font-family="monospace" font-size="13"># Session: 12 applications sent (47 found)</text>
+</svg>
