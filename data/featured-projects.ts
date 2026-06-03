@@ -85,7 +85,7 @@ export const featuredProjects: FeaturedProject[] = [
     featured: true,
   },
   {
-    title: 'WhatsCRM',
+    title: 'ChiwaCRM',
     summary: 'Sistema de CRM comercial operado via WhatsApp com gestão de leads, conversas em tempo real e dashboard de vendas.',
     problem: 'Equipes comerciais precisam centralizar leads e conversas de WhatsApp em um único painel, sem depender de soluções caras ou limitadas.',
     role: 'Desenvolvimento do backend com Node.js/Express, frontend com React, integração com WhatsApp Web via whatsapp-web.js e comunicação em tempo real com Socket.io.',
@@ -98,12 +98,12 @@ export const featuredProjects: FeaturedProject[] = [
     ],
     stack: ['React', 'Node.js', 'Express', 'MySQL', 'Socket.io', 'WhatsApp API'],
     repoUrl: siteConfig.gitlabUrl,
-    imageUrl: '/projects/whatscrm/whatscrm-home.webp',
-    imageAlt: 'Tela de login do WhatsCRM com formulário de acesso ao sistema de leads e conversas.',
+    imageUrl: '/projects/chiwacrm/chiwacrm-home.webp',
+    imageAlt: 'Tela de login do ChiwaCRM com formulário de acesso ao sistema de leads e conversas.',
     images: [
       {
-        src: '/projects/whatscrm/whatscrm-home.webp',
-        alt: 'Tela de login do WhatsCRM com formulário de acesso ao sistema de leads e conversas.',
+        src: '/projects/chiwacrm/chiwacrm-home.webp',
+        alt: 'Tela de login do ChiwaCRM com formulário de acesso ao sistema de leads e conversas.',
       },
     ],
     featured: true,
