@@ -246,9 +246,29 @@ export const featuredProjects: FeaturedProject[] = [
     stack: ['Node.js', 'TypeScript', 'Fastify', 'React', 'PostgreSQL', 'Docker', 'Telegram API', 'LastLink', 'Grafana'],
     repoUrl: 'https://gitlab.com/diordan',
     demoUrl: 'https://koringaodds.com',
-    imageUrl: '/projects/koringa-odds/koringa-home.webp',
-    imageAlt: 'Tela de login do Koringa Odds com mascote e formulário de acesso.',
+    imageUrl: '/projects/koringa-odds/koringa-odds-futebol.webp',
+    imageAlt: 'Monitor de odds de futebol do Koringa Odds com surebets em tempo real, badges PA/Super Odds e cotações de múltiplas casas.',
     images: [
+      {
+        src: '/projects/koringa-odds/koringa-odds-futebol.webp',
+        alt: 'Monitor de odds de futebol do Koringa Odds com surebets em tempo real, badges PA/Super Odds e cotações de múltiplas casas.',
+      },
+      {
+        src: '/projects/koringa-odds/koringa-dashboard.webp',
+        alt: 'Dashboard do Koringa Odds com casas online, surebets ativas, melhor ROI e atalhos para os módulos.',
+      },
+      {
+        src: '/projects/koringa-odds/koringa-scraper-status.webp',
+        alt: 'Painel de status dos scrapers do Koringa Odds monitorando 24 casas de apostas com eventos e saúde em tempo real.',
+      },
+      {
+        src: '/projects/koringa-odds/koringa-freebet.webp',
+        alt: 'Conversor de freebet do Koringa Odds com cálculo de extração balanceada por cenário e calculadora back/lay.',
+      },
+      {
+        src: '/projects/koringa-odds/koringa-odds-basquete.webp',
+        alt: 'Monitor de odds de basquete do Koringa Odds com cotações moneyline pré-live das casas monitoradas.',
+      },
       {
         src: '/projects/koringa-odds/koringa-home.webp',
         alt: 'Tela de login do Koringa Odds com mascote e formulário de acesso.',
