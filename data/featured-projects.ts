@@ -252,11 +252,23 @@ export const featuredProjects: FeaturedProject[] = [
     stack: ['Next.js', 'TypeScript', 'Supabase', 'Tailwind CSS', 'Spotify API', 'AbacatePay'],
     repoUrl: 'https://gitlab.com/diordan',
     imageUrl: '/projects/nossacarta/nossacarta-home.webp',
-    imageAlt: 'Landing page do NossaCarta com headline "Para você, a história de nós em uma só carta".',
+    imageAlt: 'Landing page do NossaCarta com headline "Para você, a história de nós em uma só carta" e preview do envelope.',
     images: [
       {
         src: '/projects/nossacarta/nossacarta-home.webp',
-        alt: 'Landing page do NossaCarta com headline "Para você, a história de nós em uma só carta".',
+        alt: 'Landing page do NossaCarta com headline "Para você, a história de nós em uma só carta" e preview do envelope.',
+      },
+      {
+        src: '/projects/nossacarta/nossacarta-recursos.webp',
+        alt: 'Seção de recursos do NossaCarta: ritual do envelope, trilha sonora do Spotify, galeria em alta, contador regressivo e QR code.',
+      },
+      {
+        src: '/projects/nossacarta/nossacarta-planos.webp',
+        alt: 'Seção de planos do NossaCarta com as opções "Sete dias de carta" (R$ 17,90) e "Para sempre" (R$ 29,90).',
+      },
+      {
+        src: '/projects/nossacarta/nossacarta-faq.webp',
+        alt: 'Seção de perguntas frequentes e rodapé do NossaCarta com privacidade, segurança e links institucionais.',
       },
     ],
     featured: true,
