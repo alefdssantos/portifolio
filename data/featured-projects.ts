@@ -136,7 +136,7 @@ export const featuredProjects: FeaturedProject[] = [
   {
     title: 'Telegram Broadcast Bot',
     summary: 'Monorepo com painel administrativo, API REST, filas de mensagens assíncronas e worker dedicado para envio em massa no Telegram.',
-    problem: 'Enviar mensagens segmentadas para milhares de contatos no Telegram exige controle de filas, agendamento e importação de listas — sem isso, o processo é manual e falho.',
+    problem: 'Enviar mensagens segmentadas para milhares de contatos no Telegram exige controle de filas, agendamento e importação de listas. Sem isso, o processo é manual e falho.',
     role: 'Arquitetura de monorepo com Next.js no admin, Fastify na API, BullMQ/Redis para filas resilientes, Drizzle ORM com PostgreSQL e grammy como SDK do Telegram.',
     impact: 'Sistema completo de broadcast com agendamento, importação de CSV com 1.000+ contatos, filas com retry automático e painel de controle em tempo real.',
     highlights: [
@@ -161,7 +161,7 @@ export const featuredProjects: FeaturedProject[] = [
   {
     title: 'LinkedIn Auto Apply',
     summary: 'Bot de automação que se candidata a vagas no LinkedIn automaticamente, preenche formulários e responde perguntas de triagem usando inteligência artificial.',
-    problem: 'Candidatar-se manualmente a dezenas de vagas por dia é repetitivo e consome horas — automatizar esse fluxo libera tempo para focar em entrevistas e preparação.',
+    problem: 'Candidatar-se manualmente a dezenas de vagas por dia é repetitivo e consome horas. Automatizar esse fluxo libera tempo para focar em entrevistas e preparação.',
     role: 'Desenvolvimento com TypeScript, automação de browser com Playwright, integração com DeepSeek (via OpenAI SDK) para respostas inteligentes e interface CLI interativa com Inquirer.',
     impact: 'Executa candidaturas automáticas com sessão persistente, filtros configuráveis por cargo/localidade e respostas geradas por IA para perguntas genéricas de triagem.',
     highlights: [

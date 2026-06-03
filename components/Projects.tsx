@@ -448,7 +448,7 @@ export default function Projects() {
             </span>
           </h2>
           <p className="text-zinc-500 text-base mt-3 max-w-md">
-            {featuredProjects.length} projetos — do backend ao produto final.
+            {featuredProjects.length} projetos, do backend ao produto final.
           </p>
         </div>
 

@@ -23,7 +23,7 @@ export default function About() {
         <div className="scroll-reveal reveal-delay-2 space-y-6 text-zinc-400 text-lg leading-relaxed">
           <p>
             Sou um desenvolvedor <span className="text-[#3b6cb5] font-semibold">Fullstack com foco em Backend</span>,
-            com experiência na construção de <span className="font-medium">sistemas completos em produção</span> —
+            com experiência na construção de <span className="font-medium">sistemas completos em produção</span>,
             de plataformas de e-commerce e CRMs a aplicações SaaS com inteligência artificial.
           </p>
           <p>
