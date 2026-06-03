@@ -199,9 +199,29 @@ export const featuredProjects: FeaturedProject[] = [
     stack: ['React', 'TypeScript', 'Node.js', 'MySQL', 'DeepSeek AI', 'AbacatePay', 'Vercel', 'Railway'],
     repoUrl: 'https://gitlab.com/diordan/skopus-legal-insight',
     demoUrl: 'https://skopus.app',
-    imageUrl: '/projects/skopus-legal-insight/skopus-legal-home.webp',
-    imageAlt: 'Tela de login do Skopus Legal Insight com preview do dashboard jurídico.',
+    imageUrl: '/projects/skopus-legal-insight/skopus-dashboard.webp',
+    imageAlt: 'Dashboard do Skopus Legal Insight com KPIs, taxa de sucesso por tese, decisões recentes e fila de revisão.',
     images: [
+      {
+        src: '/projects/skopus-legal-insight/skopus-dashboard.webp',
+        alt: 'Dashboard do Skopus Legal Insight com KPIs, taxa de sucesso por tese, decisões recentes e fila de revisão.',
+      },
+      {
+        src: '/projects/skopus-legal-insight/skopus-copiloto.webp',
+        alt: 'Copiloto jurídico (Assistente IA) do Skopus com sugestões de análise baseadas nos dados do escritório.',
+      },
+      {
+        src: '/projects/skopus-legal-insight/skopus-teses.webp',
+        alt: 'Tela de teses jurídicas do Skopus com taxa de sucesso, volume de decisões e tendência por tese.',
+      },
+      {
+        src: '/projects/skopus-legal-insight/skopus-busca.webp',
+        alt: 'Busca jurídica do Skopus com decisões indexadas, ementas e resultado (procedente/improcedente/parcial).',
+      },
+      {
+        src: '/projects/skopus-legal-insight/skopus-relatorios.webp',
+        alt: 'Tela de relatórios do Skopus com indicadores e geração de relatórios estratégicos em PDF.',
+      },
       {
         src: '/projects/skopus-legal-insight/skopus-legal-home.webp',
         alt: 'Tela de login do Skopus Legal Insight com preview do dashboard jurídico.',
