@@ -277,6 +277,31 @@ export const featuredProjects: FeaturedProject[] = [
     featured: true,
   },
   {
+    title: 'Interview Copilot',
+    summary: 'App nativo de macOS que escuta a entrevista, transcreve a fala do entrevistador, traduz para português e sugere a resposta em tempo real com IA.',
+    problem: 'Em entrevistas técnicas em inglês é difícil acompanhar a pergunta e formular uma boa resposta ao vivo, sob pressão e com barreira de idioma.',
+    role: 'Aplicativo nativo em Swift/SwiftUI para macOS com painel flutuante e menu bar, captura de áudio do sistema, transcrição de fala (Speech), tradução e sugestão de resposta via DeepSeek, histórico e chave de API guardada no Keychain.',
+    impact: 'Captura a pergunta do entrevistador, mostra a transcrição em inglês, a tradução em português e uma sugestão de resposta pronta para usar, com histórico da entrevista.',
+    highlights: [
+      'App nativo macOS em Swift/SwiftUI com painel flutuante e menu bar',
+      'Captura de áudio do sistema e transcrição de fala em tempo real',
+      'Tradução automática EN→PT e sugestão de resposta via DeepSeek',
+      'Histórico da entrevista e chave de API guardada no Keychain',
+      'Empacotamento .app via Swift Package Manager',
+    ],
+    stack: ['Swift', 'SwiftUI', 'macOS', 'DeepSeek AI', 'Speech'],
+    repoUrl: 'https://gitlab.com/diordan/interview-assistant',
+    imageUrl: '/projects/interview-copilot/interview-copilot.webp',
+    imageAlt: 'Interface do Interview Copilot com transcrição em inglês, tradução em português e resposta sugerida por IA durante uma entrevista.',
+    images: [
+      {
+        src: '/projects/interview-copilot/interview-copilot.webp',
+        alt: 'Interface do Interview Copilot com transcrição em inglês, tradução em português e resposta sugerida por IA durante uma entrevista.',
+      },
+    ],
+    featured: true,
+  },
+  {
     title: 'Gustavo · Atendimento IA',
     summary: 'Atendimento comercial automatizado no WhatsApp oficial (Meta) com IA que interpreta pedidos, monta pré-orçamento, integra catálogo via Tiny ERP e faz handoff para humano.',
     problem: 'Empresas de brindes personalizados perdem vendas respondendo manualmente cada orçamento no WhatsApp, sem padronizar regras, mínimos e catálogo.',

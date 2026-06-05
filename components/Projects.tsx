@@ -86,6 +86,10 @@ const STACK_COLORS: Record<string, string> = {
   'Whisper':      '#10a37f',
   'yt-dlp':       '#ef4444',
   'JavaScript':   '#f7df1e',
+  'Swift':        '#f05138',
+  'SwiftUI':      '#2396f3',
+  'macOS':        '#a3a3a3',
+  'Speech':       '#a855f7',
 }
 
 function StackBadge({ tech }: { tech: string }) {
