@@ -277,6 +277,82 @@ export const featuredProjects: FeaturedProject[] = [
     featured: true,
   },
   {
+    title: 'Gustavo · Atendimento IA',
+    summary: 'Atendimento comercial automatizado no WhatsApp oficial (Meta) com IA que interpreta pedidos, monta pré-orçamento, integra catálogo via Tiny ERP e faz handoff para humano.',
+    problem: 'Empresas de brindes personalizados perdem vendas respondendo manualmente cada orçamento no WhatsApp, sem padronizar regras, mínimos e catálogo.',
+    role: 'Backend próprio em Python/FastAPI com PostgreSQL e Alembic, integração com WhatsApp Cloud API (Meta), interpretação de mensagens via DeepSeek, sincronização de catálogo com Tiny ERP e painel de atendimento, catálogo e pedidos. Toda a orquestração sem n8n.',
+    impact: 'Recebe a mensagem, reconhece o pedido, valida o mínimo, gera pré-orçamento, solicita CEP/frete e aciona handoff humano quando o cliente envia arte ou logomarca.',
+    highlights: [
+      'WhatsApp Cloud API oficial da Meta como canal',
+      'Interpretação de pedidos por IA (DeepSeek)',
+      'Catálogo sincronizado com Tiny ERP (660+ produtos)',
+      'Painel estilo CRM com atendimento, catálogo e pedidos',
+      'Handoff humano automático ao receber arte ou logo',
+      'Backend próprio Python/FastAPI + PostgreSQL, deploy Docker/Railway',
+    ],
+    stack: ['Python', 'FastAPI', 'PostgreSQL', 'DeepSeek AI', 'WhatsApp Cloud API', 'Tiny ERP', 'Docker'],
+    repoUrl: siteConfig.gitlabUrl,
+    imageUrl: '/projects/gustavo/gustavo-atendimento.webp',
+    imageAlt: 'Painel de atendimento do Gustavo com lista de conversas, chat com IA respondendo e ficha de lead do cliente.',
+    images: [
+      {
+        src: '/projects/gustavo/gustavo-atendimento.webp',
+        alt: 'Painel de atendimento do Gustavo com lista de conversas, chat com IA respondendo e ficha de lead do cliente.',
+      },
+      {
+        src: '/projects/gustavo/gustavo-catalogo.webp',
+        alt: 'Tela de catálogo do Gustavo com produtos sincronizados do Tiny ERP, status e configuração de pricing.',
+      },
+      {
+        src: '/projects/gustavo/gustavo-pedidos.webp',
+        alt: 'Tela de pedidos do Gustavo com indicadores por status, valores e código de rastreio.',
+      },
+      {
+        src: '/projects/gustavo/gustavo-arte.webp',
+        alt: 'Fluxo de handoff humano do Gustavo com solicitação de análise de arte/logo enviada pelo cliente.',
+      },
+    ],
+    featured: true,
+  },
+  {
+    title: 'Mapa da Saúde',
+    summary: 'Quiz de saúde com diagnóstico personalizado em 6 dimensões, relatório web, geração de PDF e disparo do resultado via WhatsApp.',
+    problem: 'O cliente precisava capturar leads qualificados com um diagnóstico de saúde personalizado, entregando um resultado bonito e compartilhável sem trabalho manual.',
+    role: 'Desenvolvimento fullstack com Next.js 16 (App Router), React 19 e Tailwind v4, motor de pontuação configurável por dimensão, armazenamento de leads no Vercel Blob, geração de PDF com Puppeteer e testes E2E com Playwright.',
+    impact: 'Entrega o quiz em poucos minutos, calcula o mapa de saúde nas 6 dimensões, gera relatório web e PDF e envia o resultado pelo WhatsApp, com painel admin para gerenciar perguntas, pontuação e leads.',
+    highlights: [
+      'Quiz multi-etapas com diagnóstico em 6 dimensões',
+      'Motor de pontuação configurável por pergunta e dimensão',
+      'Relatório web e geração de PDF com Puppeteer',
+      'Captura de leads no Vercel Blob e envio do resultado por WhatsApp',
+      'Painel admin de perguntas, pontuação e leads',
+      'Next.js 16 + React 19 + Tailwind v4, testes E2E com Playwright',
+    ],
+    stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Vercel Blob', 'Puppeteer', 'Playwright'],
+    repoUrl: siteConfig.gitlabUrl,
+    imageUrl: '/projects/quiz-mapa-saude/quiz-landing.webp',
+    imageAlt: 'Landing page do Mapa da Saúde com proposta de diagnóstico em seis dimensões e chamada para iniciar o quiz.',
+    images: [
+      {
+        src: '/projects/quiz-mapa-saude/quiz-landing.webp',
+        alt: 'Landing page do Mapa da Saúde com proposta de diagnóstico em seis dimensões e chamada para iniciar o quiz.',
+      },
+      {
+        src: '/projects/quiz-mapa-saude/quiz-form.webp',
+        alt: 'Etapa inicial do quiz Mapa da Saúde com formulário de identificação e progresso por etapas.',
+      },
+      {
+        src: '/projects/quiz-mapa-saude/quiz-resultado.webp',
+        alt: 'Tela de resultado do Mapa da Saúde com pontuação por dimensão e ações para receber o relatório.',
+      },
+      {
+        src: '/projects/quiz-mapa-saude/quiz-admin.webp',
+        alt: 'Painel admin do Mapa da Saúde com edição de pergunta e pontuação por dimensão de cada resposta.',
+      },
+    ],
+    featured: true,
+  },
+  {
     title: 'NossaCarta',
     summary: 'Site personalizado de carta de amor com contador regressivo, galeria de fotos, música do Spotify, cápsulas do tempo e QR code.',
     problem: 'Criar uma experiência digital única e memorável para presentear em datas especiais, indo além de mensagens comuns.',

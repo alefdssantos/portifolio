@@ -78,6 +78,11 @@ const STACK_COLORS: Record<string, string> = {
   'AbacatePay':   '#16a34a',
   'LastLink':     '#f43f5e',
   'Grafana':      '#f46800',
+  'Python':       '#3776ab',
+  'WhatsApp Cloud API': '#25d366',
+  'Tiny ERP':     '#2563eb',
+  'Vercel Blob':  '#ffffff',
+  'Puppeteer':    '#40b5a4',
 }
 
 function StackBadge({ tech }: { tech: string }) {
