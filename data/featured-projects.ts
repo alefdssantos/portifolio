@@ -414,6 +414,31 @@ export const featuredProjects: FeaturedProject[] = [
     featured: true,
   },
   {
+    title: 'Gikamo',
+    summary: 'Ferramenta web para transcrever vídeos de TikTok e YouTube em lote, com download de áudio, fila de jobs e exportação.',
+    problem: 'Transcrever vários vídeos manualmente é lento e depende de serviços online; faltava uma ferramenta local que baixasse o áudio e gerasse a transcrição em lote.',
+    role: 'Backend em Python/FastAPI com fila assíncrona de jobs, download de áudio via yt-dlp e transcrição local com Whisper (OpenAI), frontend próprio e empacotamento para Windows.',
+    impact: 'Cola um ou vários links, processa em fila com thumbnails e entrega a transcrição com segmentos por tempo, pronta para exportar.',
+    highlights: [
+      'Transcrição em lote a partir de links (TikTok, YouTube)',
+      'Download de áudio com yt-dlp e transcrição local com Whisper',
+      'Fila assíncrona de jobs com persistência e retomada',
+      'Processamento 100% local, sem enviar áudio a terceiros',
+      'Backend Python/FastAPI com frontend próprio e setup para Windows',
+    ],
+    stack: ['Python', 'FastAPI', 'Whisper', 'yt-dlp', 'JavaScript'],
+    repoUrl: siteConfig.gitlabUrl,
+    imageUrl: '/projects/gikamo/gikamo-home.webp',
+    imageAlt: 'Interface do Gikamo com campo para colar links do TikTok, botão de transcrever e fila de jobs.',
+    images: [
+      {
+        src: '/projects/gikamo/gikamo-home.webp',
+        alt: 'Interface do Gikamo com campo para colar links do TikTok, botão de transcrever e fila de jobs.',
+      },
+    ],
+    featured: true,
+  },
+  {
     title: 'Portfólio pessoal',
     summary: 'Site institucional autoral para apresentar experiência, projetos e canais de contato com recorte visual mais forte.',
     problem: 'Concentrar apresentação profissional, provas visuais de trabalho e acesso rápido a contato em uma experiência direta e bem organizada.',

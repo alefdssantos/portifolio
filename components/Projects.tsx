@@ -83,6 +83,9 @@ const STACK_COLORS: Record<string, string> = {
   'Tiny ERP':     '#2563eb',
   'Vercel Blob':  '#ffffff',
   'Puppeteer':    '#40b5a4',
+  'Whisper':      '#10a37f',
+  'yt-dlp':       '#ef4444',
+  'JavaScript':   '#f7df1e',
 }
 
 function StackBadge({ tech }: { tech: string }) {
