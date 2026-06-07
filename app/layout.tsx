@@ -1,9 +1,15 @@
 import type { Metadata } from 'next'
-import BackgroundEffects from '../components/BackgroundEffects'
+import { Geist } from 'next/font/google'
 import { siteConfig } from '../data/site'
 import './globals.css'
 
-const siteTitle = `${siteConfig.name} | ${siteConfig.role}`
+const sans = Geist({
+  subsets: ['latin'],
+  variable: '--font-geist-src',
+  display: 'swap',
+})
+
+const siteTitle = `AlefOS · ${siteConfig.name} · ${siteConfig.role}`
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -54,23 +60,17 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: ['/opengraph-image'],
   },
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/favicon.ico',
-  },
   manifest: '/manifest.webmanifest',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR">
-      <body className="relative isolate z-0 font-sans antialiased">
-        <BackgroundEffects />
+    <html lang="pt-BR" className={sans.variable}>
+      <body className="font-mono antialiased">
         <a className="skip-link" href="#conteudo">
           Pular para o conteúdo principal
         </a>
-        <div className="relative z-10">{children}</div>
+        {children}
       </body>
     </html>
   )

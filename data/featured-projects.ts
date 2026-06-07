@@ -5,8 +5,11 @@ export type FeaturedProjectImage = {
   alt?: string
 }
 
+export type ProjectCategory = 'IA' | 'SaaS' | 'Automação' | 'Web'
+
 export type FeaturedProject = {
   title: string
+  category: ProjectCategory
   summary: string
   problem: string
   role: string
@@ -24,6 +27,7 @@ export type FeaturedProject = {
 export const featuredProjects: FeaturedProject[] = [
   {
     title: 'Gika Finance',
+    category: 'SaaS',
     summary: 'Sistema fullstack para finanças pessoais com dashboard, transações, relatórios e rotinas complementares.',
     problem: 'Centralizar contas, categorias, lançamentos e acompanhamento pessoal em uma única aplicação web.',
     role: 'Monorepo com React/Vite no frontend, Node.js/Express no backend, MySQL, autenticação JWT e cobertura E2E.',
@@ -86,6 +90,7 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     title: 'ChiwaCRM',
+    category: 'SaaS',
     summary: 'Sistema de CRM comercial operado via WhatsApp com gestão de leads, conversas em tempo real e dashboard de vendas.',
     problem: 'Equipes comerciais precisam centralizar leads e conversas de WhatsApp em um único painel, sem depender de soluções caras ou limitadas.',
     role: 'Desenvolvimento do backend com Node.js/Express, frontend com React, integração com WhatsApp Web via whatsapp-web.js e comunicação em tempo real com Socket.io.',
@@ -110,6 +115,7 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     title: 'Creators Studio',
+    category: 'Web',
     summary: 'Downloader fullstack para YouTube, TikTok e Twitter/X.',
     problem: 'Unificar downloads multi-plataforma com fluxo resiliente e direto.',
     role: 'Node.js + TypeScript no backend, Next.js/React no frontend e arquitetura de resiliência.',
@@ -135,6 +141,7 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     title: 'Telegram Broadcast Bot',
+    category: 'Automação',
     summary: 'Monorepo com painel administrativo, API REST, filas de mensagens assíncronas e worker dedicado para envio em massa no Telegram.',
     problem: 'Enviar mensagens segmentadas para milhares de contatos no Telegram exige controle de filas, agendamento e importação de listas. Sem isso, o processo é manual e falho.',
     role: 'Arquitetura de monorepo com Next.js no admin, Fastify na API, BullMQ/Redis para filas resilientes, Drizzle ORM com PostgreSQL e grammy como SDK do Telegram.',
@@ -160,6 +167,7 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     title: 'LinkedIn Auto Apply',
+    category: 'Automação',
     summary: 'Bot de automação que se candidata a vagas no LinkedIn automaticamente, preenche formulários e responde perguntas de triagem usando inteligência artificial.',
     problem: 'Candidatar-se manualmente a dezenas de vagas por dia é repetitivo e consome horas. Automatizar esse fluxo libera tempo para focar em entrevistas e preparação.',
     role: 'Desenvolvimento com TypeScript, automação de browser com Playwright, integração com DeepSeek (via OpenAI SDK) para respostas inteligentes e interface CLI interativa com Inquirer.',
@@ -184,6 +192,7 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     title: 'Skopus Legal Insight',
+    category: 'IA',
     summary: 'Plataforma de inteligência jurídica para escritórios de advocacia com copiloto IA, dashboard de métricas e gestão de documentos.',
     problem: 'Escritórios precisam centralizar processos, analisar decisões e acompanhar métricas sem depender de planilhas ou sistemas caros.',
     role: 'Fullstack com React + Vite no frontend, Node.js/Express no backend, MySQL, JWT, upload de documentos, pagamentos via AbacatePay e integração com IA via DeepSeek.',
@@ -231,6 +240,7 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     title: 'Koringa Odds',
+    category: 'Automação',
     summary: 'Plataforma de monitoramento de odds esportivas em tempo real com detecção de surebets, alertas via Telegram e painel web.',
     problem: 'Apostadores profissionais perdem oportunidades de surebet por não conseguir monitorar múltiplas casas em tempo real de forma centralizada.',
     role: 'Monorepo com Fastify na API, React/Vite no frontend, worker Telegram, scraper de odds, Drizzle ORM com PostgreSQL e observabilidade com Prometheus + Grafana. Deploy próprio em VPS com domínio dedicado e pagamentos via LastLink.',
@@ -278,6 +288,7 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     title: 'Interview Copilot',
+    category: 'IA',
     summary: 'App nativo de macOS que escuta a entrevista, transcreve a fala do entrevistador, traduz para português e sugere a resposta em tempo real com IA.',
     problem: 'Em entrevistas técnicas em inglês é difícil acompanhar a pergunta e formular uma boa resposta ao vivo, sob pressão e com barreira de idioma.',
     role: 'Aplicativo nativo em Swift/SwiftUI para macOS com painel flutuante e menu bar, captura de áudio do sistema, transcrição de fala (Speech), tradução e sugestão de resposta via DeepSeek, histórico e chave de API guardada no Keychain.',
@@ -303,6 +314,7 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     title: 'Gustavo · Atendimento IA',
+    category: 'IA',
     summary: 'Atendimento comercial automatizado no WhatsApp oficial (Meta) com IA que interpreta pedidos, monta pré-orçamento, integra catálogo via Tiny ERP e faz handoff para humano.',
     problem: 'Empresas de brindes personalizados perdem vendas respondendo manualmente cada orçamento no WhatsApp, sem padronizar regras, mínimos e catálogo.',
     role: 'Backend próprio em Python/FastAPI com PostgreSQL e Alembic, integração com WhatsApp Cloud API (Meta), interpretação de mensagens via DeepSeek, sincronização de catálogo com Tiny ERP e painel de atendimento, catálogo e pedidos. Toda a orquestração sem n8n.',
@@ -341,6 +353,7 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     title: 'Mapa da Saúde',
+    category: 'Web',
     summary: 'Quiz de saúde com diagnóstico personalizado em 6 dimensões, relatório web, geração de PDF e disparo do resultado via WhatsApp.',
     problem: 'O cliente precisava capturar leads qualificados com um diagnóstico de saúde personalizado, entregando um resultado bonito e compartilhável sem trabalho manual.',
     role: 'Desenvolvimento fullstack com Next.js 16 (App Router), React 19 e Tailwind v4, motor de pontuação configurável por dimensão, armazenamento de leads no Vercel Blob, geração de PDF com Puppeteer e testes E2E com Playwright.',
@@ -379,6 +392,7 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     title: 'NossaCarta',
+    category: 'Web',
     summary: 'Site personalizado de carta de amor com contador regressivo, galeria de fotos, música do Spotify, cápsulas do tempo e QR code.',
     problem: 'Criar uma experiência digital única e memorável para presentear em datas especiais, indo além de mensagens comuns.',
     role: 'Next.js no frontend com Supabase como backend, autenticação, storage de fotos, integração com Spotify e pagamentos via AbacatePay.',
@@ -416,6 +430,7 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     title: '99Freelas Bot',
+    category: 'Automação',
     summary: 'Bot de automação que busca projetos no 99Freelas, avalia compatibilidade com IA e envia propostas personalizadas automaticamente.',
     problem: 'Freelancers perdem oportunidades por não monitorar constantemente novas publicações e demorar para enviar propostas relevantes.',
     role: 'TypeScript com Playwright para automação de browser, DeepSeek para avaliar compatibilidade e gerar propostas personalizadas com sessão persistente.',
@@ -440,6 +455,7 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     title: 'Gikamo',
+    category: 'IA',
     summary: 'Ferramenta web para transcrever vídeos de TikTok e YouTube em lote, com download de áudio, fila de jobs e exportação.',
     problem: 'Transcrever vários vídeos manualmente é lento e depende de serviços online; faltava uma ferramenta local que baixasse o áudio e gerasse a transcrição em lote.',
     role: 'Backend em Python/FastAPI com fila assíncrona de jobs, download de áudio via yt-dlp e transcrição local com Whisper (OpenAI), frontend próprio e empacotamento para Windows.',
@@ -465,6 +481,7 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     title: 'Portfólio pessoal',
+    category: 'Web',
     summary: 'Site institucional autoral para apresentar experiência, projetos e canais de contato com recorte visual mais forte.',
     problem: 'Concentrar apresentação profissional, provas visuais de trabalho e acesso rápido a contato em uma experiência direta e bem organizada.',
     role: 'Arquitetura e implementação com Next.js, React, TypeScript, Tailwind CSS, SEO técnico e curadoria visual das seções.',

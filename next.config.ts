@@ -11,6 +11,9 @@ const nextConfig: NextConfig = {
       {
         pathname: '/profile/**',
       },
+      {
+        pathname: '/art/**',
+      },
     ],
     remotePatterns: [
       {
