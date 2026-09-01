@@ -20,7 +20,7 @@ export default function Hint() {
   const dismiss = () => {
     setShow(false)
     try {
-      localStorage.setItem(HINT_STORAGE_ID, '1')
+    localStorage.setItem(HINT_STORAGE_ID, '1')
     } catch {}
   }
 
